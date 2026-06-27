@@ -1,0 +1,9 @@
+{
+  "name": "@swiftmali/supabase",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./src/index.ts",
+  "exports": { ".": "./src/index.ts", "./client": "./src/client.ts", "./types": "./src/database.types.ts" },
+  "dependencies": { "@supabase/supabase-js": "^2.49.9", "@supabase/ssr": "^0.6.1" },
+  "devDependencies": { "typescript": "^5.8.3" }
+}

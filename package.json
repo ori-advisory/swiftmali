@@ -1,0 +1,24 @@
+{
+  "name": "swiftmali",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:eats": "turbo dev --filter=eats-web",
+    "dev:deliver": "turbo dev --filter=deliver-web",
+    "dev:biz": "turbo dev --filter=biz-web",
+    "dev:beauty": "turbo dev --filter=beauty-web",
+    "dev:mobile": "turbo dev --filter=mobile",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean",
+    "db:push": "supabase db push",
+    "db:types": "supabase gen types typescript --local > packages/supabase/src/database.types.ts"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3"
+  }
+}
