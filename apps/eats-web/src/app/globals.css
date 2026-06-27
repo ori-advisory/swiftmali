@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  body { @apply bg-neutral-100 text-neutral-950 font-body; }
+  * { -webkit-tap-highlight-color: transparent; }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-thumb { @apply bg-neutral-200 rounded-full; }
+  ::-webkit-scrollbar-track { background: transparent; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold-400 hover:bg-gold-600 text-neutral-950 font-display font-semibold
+           px-6 py-3 rounded-xl transition-all duration-150 active:scale-[.97]
+           disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply bg-neutral-200 hover:bg-neutral-200/70 text-neutral-950 font-display font-semibold
+           px-6 py-3 rounded-xl transition-all duration-150 active:scale-[.97];
+  }
+  .btn-ghost {
+    @apply text-neutral-700 hover:text-neutral-950 hover:bg-neutral-200/50
+           px-4 py-2 rounded-lg transition-all duration-150;
+  }
+  .card { @apply bg-white rounded-2xl border border-neutral-200 overflow-hidden; }
+  .input {
+    @apply w-full bg-neutral-100 border border-neutral-200 rounded-xl px-4 py-3
+           text-neutral-950 placeholder-neutral-400 font-body
+           focus:outline-none focus:border-gold-400 focus:ring-2 focus:ring-gold-400/20
+           transition-all duration-150;
+  }
+  .tag { @apply inline-flex items-center gap-1 bg-gold-50 text-neutral-700 text-xs font-medium px-2 py-0.5 rounded-full; }
+  .badge { @apply inline-flex items-center justify-center bg-gold-400 text-neutral-950 text-xs font-bold px-1.5 py-0.5 rounded-full min-w-[18px]; }
+}
