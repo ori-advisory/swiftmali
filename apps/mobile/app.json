@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "SwiftMali",
+    "slug": "swiftmali",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "swiftmali",
+    "userInterfaceStyle": "light",
+    "splash": { "image": "./assets/splash.png", "resizeMode": "contain", "backgroundColor": "#0E0D0B" },
+    "ios": { "supportsTablet": false, "bundleIdentifier": "com.oriadvisory.swiftmali" },
+    "android": { "adaptiveIcon": { "foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#0E0D0B" }, "package": "com.oriadvisory.swiftmali" },
+    "web": { "bundler": "metro", "output": "static" },
+    "plugins": ["expo-router", "expo-font", "expo-secure-store"],
+    "experiments": { "typedRoutes": true },
+    "extra": {
+      "supabaseUrl": "",
+      "supabaseAnonKey": "",
+      "eas": { "projectId": "" }
+    }
+  }
+}
